@@ -1,0 +1,55 @@
+onerror {resume}
+quietly WaveActivateNextPane {} 0
+add wave -noupdate /pong_testbench/CLOCK_PERIOD
+add wave -noupdate /pong_testbench/clk
+add wave -noupdate /pong_testbench/reset
+add wave -noupdate /pong_testbench/VGA_R
+add wave -noupdate /pong_testbench/VGA_G
+add wave -noupdate /pong_testbench/VGA_B
+add wave -noupdate /pong_testbench/VGA_HS
+add wave -noupdate /pong_testbench/VGA_VS
+add wave -noupdate /pong_testbench/duct/drawing
+add wave -noupdate -radix unsigned /pong_testbench/duct/draw_square/x
+add wave -noupdate /pong_testbench/duct/current_x
+add wave -noupdate -radix unsigned /pong_testbench/duct/draw_square/y
+add wave -noupdate /pong_testbench/duct/current_y
+add wave -noupdate -radix unsigned /pong_testbench/duct/draw_square/w
+add wave -noupdate -radix unsigned /pong_testbench/duct/draw_square/h
+add wave -noupdate /pong_testbench/duct/draw_square/draw_this
+add wave -noupdate /pong_testbench/duct/paddle_r_y
+add wave -noupdate /pong_testbench/duct/r_up
+add wave -noupdate /pong_testbench/duct/r_down
+add wave -noupdate -color Maroon /pong_testbench/duct/r_up_in/in
+add wave -noupdate -color Maroon /pong_testbench/duct/r_up_in/out
+add wave -noupdate -color Maroon /pong_testbench/duct/r_up_in/clk_div
+add wave -noupdate -color {Slate Blue} /pong_testbench/duct/r_down_in/in
+add wave -noupdate -color {Slate Blue} /pong_testbench/duct/r_down_in/out
+add wave -noupdate -color {Slate Blue} /pong_testbench/duct/r_down_in/clk_div
+add wave -noupdate -color Gold /pong_testbench/duct/theball/speed_x
+add wave -noupdate -color Gold /pong_testbench/duct/theball/speed_y
+add wave -noupdate -color Gold -radix unsigned /pong_testbench/duct/theball/x
+add wave -noupdate -color Gold -radix unsigned /pong_testbench/duct/theball/y
+add wave -noupdate -color Gold /pong_testbench/duct/theball/right
+add wave -noupdate -color Gold /pong_testbench/duct/theball/left
+add wave -noupdate -color Gold /pong_testbench/duct/theball/up
+add wave -noupdate -color Gold /pong_testbench/duct/theball/down
+add wave -noupdate -color Gold -radix unsigned /pong_testbench/duct/ball_x
+add wave -noupdate -color Gold -radix unsigned /pong_testbench/duct/ball_y
+TreeUpdate [SetDefaultTree]
+WaveRestoreCursors {{Cursor 1} {18830867 ps} 0} {{Cursor 2} {4015824 ps} 0}
+quietly wave cursor active 2
+configure wave -namecolwidth 444
+configure wave -valuecolwidth 100
+configure wave -justifyvalue left
+configure wave -signalnamewidth 0
+configure wave -snapdistance 10
+configure wave -datasetprefix 0
+configure wave -rowmargin 4
+configure wave -childrowmargin 2
+configure wave -gridoffset 0
+configure wave -gridperiod 1
+configure wave -griddelta 40
+configure wave -timeline 0
+configure wave -timelineunits ps
+update
+WaveRestoreZoom {0 ps} {308 ps}

@@ -1,0 +1,4 @@
+Warning (10034): Output port "LEDR[9..1]" at DE1_SoC.sv(40) has no driver
+Warning (284006): Flipped 2 bits in user-encoded state machine |DE1_SoC|pong:dosome|ps_ball_collision
+Warning (284006): Flipped 1 bits in user-encoded state machine |DE1_SoC|pong:dosome|display_output:drawer|ps_v
+Warning (284006): Flipped 1 bits in user-encoded state machine |DE1_SoC|pong:dosome|display_output:drawer|ps_h
